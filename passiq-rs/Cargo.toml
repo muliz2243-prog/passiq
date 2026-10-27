@@ -1,0 +1,21 @@
+[package]
+name        = "passiq-rs"
+version     = "0.1.0"
+edition     = "2021"
+description = "PassIQ — Expected Pass (xP) real-time analyzer. Hackathon prototype."
+
+[[bin]]
+name = "passiq"
+path = "src/main.rs"
+
+[dependencies]
+eframe     = "0.31"
+egui       = "0.31"
+serde      = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+opt-level      = 3
+lto            = true
+codegen-units  = 1
+strip          = true

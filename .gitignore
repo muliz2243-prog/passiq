@@ -1,0 +1,18 @@
+# Rust build output
+passiq-rs/target/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local notes and scratch work (not published)
+estado_proyecto.txt
+instrucciones estilo y pautas de programacion.txt
+scratch/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
