@@ -1,17 +1,4 @@
-// ============================================================
-// PassIQ — app.rs
-// UI state, inference pipeline, and egui rendering.
-//
-// Style: LOTA-F — explicit, single-direction data flow.
-//
-// Stage order inside update():
-//   1. compute_inference      → InferenceResult   (pure, no UI)
-//   2. show_top_panel         → xP readout with dynamic color
-//   3. show_left_panel        → sliders + reload model + load match
-//   4. show_right_panel       → player ranking table     ← NEW
-//   5. show_central_panel     → pitch canvas + pass arrow
-//      (CentralPanel must come last — fills remaining space)
-// ============================================================
+
 
 use egui::{Color32, FontId, Pos2, Rect, RichText, Sense, Stroke, StrokeKind, Vec2};
 use std::path::PathBuf;
